@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #402A2C;
+    --color-secondary: #f58721;
+    --background-primary: #241715;
+    --background-secondary: #703D57;
+    --white: #FFFFFF;
+    --black: #333333;
+    --size-h3: 1.2rem;
+    --size-h1: 5rem;
+}
+
+body {
+    background-color: var(--background-primary);
+    color: var(--white);
+}
+
+button {
+    display: flex;
+    font-size: var(--size-h3);
+    padding: .6rem;
+    border-radius: .5rem;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-secondary);
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all ease .5s;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+/* HEADER SECTION */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    border-bottom: .2rem solid var(--color-secondary);
+}
+
+.logo p {
+    font-size: 2rem;
+    color: var(--color-secondary);
+}
+
+.navbar nav {
+    display: flex;
+    gap: 6rem;
+    font-size: var(--size-h3);
+    text-transform: uppercase;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: var(--white);
+    transition: all ease .3s;
+}
+
+.navbar nav a:hover {
+    transform: scale(1.2);
+    color: var(--color-secondary);
+}
+
+.icons {
+    display: flex;
+    gap: 3rem;
+    font-size: var(--size-h3);
+    cursor: pointer;
+}
+
+.icons i {
+    transition: all ease .3s;
+}
+
+.icons i:hover {
+    transform: scale(1.4);
+    color: var(--color-secondary);
+}
+
+/* HOME SECTION */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10rem;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.home-text h1 {
+    font-size: var(--size-h1);
+    padding-bottom: .5rem;
+}
+
+.home-text p {
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: justify;
+    padding-bottom: 2rem;
+}
+
+.home-img img {
+    height: 20rem;
+    width: auto; 
+}
+
+.home-btn {
+    margin-left: 20rem;
+}
+
